@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/close_button"
+        style="@style/textStyle"
+        android:textColor="@color/black"
+        android:text = "Close"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Settings"
+        android:layout_centerHorizontal="true"
+        style="@style/textStyle"
+        android:id="@+id/label_settings"
+        android:textSize="40sp"
+        android:layout_marginTop="50dp"
+        />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/textStyle"
+        android:id="@+id/label_usystem"
+        android:layout_below="@id/label_settings"
+        android:text="Unit Systems"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:textSize="30sp"
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/radio_group1"
+        android:layout_below="@id/label_usystem"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textStyle"
+            android:id="@+id/metric"
+            android:textSize="20sp"
+            android:text="Metric (C, km/h, mm)"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textStyle"
+            android:id="@+id/us"
+            android:textSize="20sp"
+            android:text="US (F, mi/hr, in)"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/textStyle"
+        android:id="@+id/label_languages"
+        android:layout_below="@id/radio_group1"
+        android:text="Languages"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:textSize="30sp"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/radio_group2"
+        android:layout_below="@id/label_languages"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textStyle"
+            android:id="@+id/english"
+            android:textSize="20sp"
+            android:text="English"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textStyle"
+            android:id="@+id/bengali"
+            android:textSize="20sp"
+            android:text="Bengali"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textStyle"
+            android:id="@+id/spanish"
+            android:textSize="20sp"
+            android:text="Espanyol"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textStyle"
+            android:id="@+id/french"
+            android:textSize="20sp"
+            android:text="French"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textStyle"
+            android:id="@+id/hindi"
+            android:textSize="20sp"
+            android:text="Hindi"/>
+
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio_group2"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/save_settings"
+        android:text="Save Settings"
+        android:gravity="center"
+        />
+
+
+</RelativeLayout>

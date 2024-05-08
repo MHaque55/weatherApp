@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/blue">
+
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:format12Hour="hh:mm:ss a"
+        android:id="@+id/clock"
+        style="@style/textStyle"
+        android:textSize="45sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/current_date_view"
+        style="@style/textStyle"
+        android:text="Current Date"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/clock"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Location"
+        android:id="@+id/location_view"
+        style="@style/textStyle"
+        android:textSize="20sp"
+        android:layout_below="@+id/current_date_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/location_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/sunny"
+        android:id="@+id/picture_view"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/temp_view"
+        android:text="50 Degree"
+        style="@style/textStyle"
+        android:textSize="50sp"
+        android:layout_below="@+id/picture_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temp_view"
+        android:id="@+id/weather_cond_view"
+        style="@style/textStyle"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Clear"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weather_cond_view"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        >
+        <TextView
+            android:id="@+id/wind_view"
+            style="@style/textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:text=""
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/pressure_view"
+            style="@style/textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=""
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/humidity_view"
+            style="@style/textStyle"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_alignParentEnd="true"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/temp_view"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        >
+        <TextView
+            style="@style/textStyle"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:text="Wind"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            style="@style/textStyle"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Pressure"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Humidity"
+            style="@style/textStyle"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_alignParentEnd="true"
+        />
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/search_button"
+        android:background="@drawable/search_button"
+        android:text="Search"
+        android:layout_marginLeft="300dp"
+        android:fontFamily="monospace">
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/settings_button"
+        android:background="@drawable/search_button"
+        android:text="Settings"
+        android:layout_marginStart="0dp"
+        android:fontFamily="monospace">
+    </androidx.appcompat.widget.AppCompatButton>
+
+</RelativeLayout>

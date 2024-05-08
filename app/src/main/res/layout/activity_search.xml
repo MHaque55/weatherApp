@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+
+    <!--android:src="@drawable/sunny"-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/label_header"
+        android:layout_centerHorizontal="true"
+        style="@style/textStyle"
+        android:text="Search Your Favorite City"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"
+        />
+
+    <android.widget.SearchView
+        android:id="@+id/search_view"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/label_header"
+        android:queryHint="Search the city"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:iconifiedByDefault="false"
+        />
+
+    <TextView
+        style="@style/textStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/curr_res_view"
+        android:layout_below="@+id/search_view"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="100dp"
+        />
+
+    <ImageView
+        style="@style/imageStyle"
+        android:layout_marginTop="22dp"
+        android:id="@+id/curr_img"
+        android:layout_below="@+id/search_view"
+        />
+
+
+    <ImageView
+        style="@style/imageStyle"
+        android:id="@+id/img_view_1"
+        android:layout_below="@+id/curr_res_view"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageView
+        style="@style/imageStyle"
+        android:id="@+id/img_view_2"
+        android:layout_below="@+id/img_view_1"
+        />
+
+    <ImageView
+        style="@style/imageStyle"
+        android:id="@+id/img_view_3"
+        android:layout_below="@+id/img_view_2"
+        />
+
+    <ImageView
+        style="@style/imageStyle"
+        android:id="@+id/img_view_4"
+        android:layout_below="@+id/img_view_3"
+        />
+
+    <ImageView
+        style="@style/imageStyle"
+        android:id="@+id/img_view_5"
+        android:layout_below="@+id/img_view_4"
+        />
+
+    <ImageView
+        style="@style/imageStyle"
+        android:id="@+id/img_view_6"
+        android:layout_below="@+id/img_view_5"
+        />
+
+    <TextView
+        style="@style/textStyle2"
+        android:id="@+id/text_view_1"
+        android:layout_below="@+id/search_view"
+        android:layout_marginTop="100dp"
+        android:text=""
+        />
+
+    <TextView
+        style="@style/textStyle2"
+        android:id="@+id/text_view_2"
+        android:layout_below="@+id/text_view_1"
+        android:text=""
+        />
+
+    <TextView
+        style="@style/textStyle2"
+        android:id="@+id/text_view_3"
+        android:layout_below="@+id/text_view_2"
+        android:text=""
+        />
+
+    <TextView
+        style="@style/textStyle2"
+        android:id="@+id/text_view_4"
+        android:layout_below="@+id/text_view_3"
+        android:text=""
+        />
+
+    <TextView
+        style="@style/textStyle2"
+        android:id="@+id/text_view_5"
+        android:layout_below="@+id/text_view_4"
+        android:text=""
+        />
+
+    <TextView
+        style="@style/textStyle2"
+        android:id="@+id/text_view_6"
+        android:layout_below="@+id/text_view_5"
+        android:text=""
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_view_6"
+        android:fontFamily="sans-serif-black"
+        android:text="Clear"
+        android:id="@+id/clear_button"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:layout_marginStart="30dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_view_6"
+        android:fontFamily="sans-serif-black"
+        android:text="Back"
+        android:id="@+id/back_button"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:layout_marginStart="270dp"
+        />
+
+
+
+
+</RelativeLayout>
